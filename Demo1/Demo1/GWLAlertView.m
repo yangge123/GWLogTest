@@ -5,7 +5,7 @@
 //  Copyright (c) 2014年. All rights reserved.
 //
 
-#import "TTAlertView.h"
+#import "GWLAlertView.h"
 #import "TLAttributedLabel.h"
 #define kTitleYOffset 18.0f
 

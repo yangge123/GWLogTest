@@ -13,7 +13,7 @@
 		2D1BD6951CC8D62100412C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6931CC8D62100412C1C /* Main.storyboard */; };
 		2D1BD6971CC8D62100412C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6961CC8D62100412C1C /* Assets.xcassets */; };
 		2D1BD69A1CC8D62100412C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6981CC8D62100412C1C /* LaunchScreen.storyboard */; };
-		2D1BD6A31CC8D64500412C1C /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BD6A21CC8D64500412C1C /* TTAlertView.m */; };
+		2D1BD6A31CC8D64500412C1C /* GWLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BD6A21CC8D64500412C1C /* GWLAlertView.m */; };
 		2D1BD6A61CC8DC5600412C1C /* pet_cancle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6A41CC8DC5600412C1C /* pet_cancle@2x.png */; };
 		2D1BD6A71CC8DC5600412C1C /* pet_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6A51CC8DC5600412C1C /* pet_ok@2x.png */; };
 		2D1BD6AC1CC9017000412C1C /* radio_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BD6AB1CC9017000412C1C /* radio_unselect@2x.png */; };
@@ -40,8 +40,8 @@
 		2D1BD6961CC8D62100412C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1BD6991CC8D62100412C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1BD69B1CC8D62100412C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D1BD6A11CC8D64500412C1C /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
-		2D1BD6A21CC8D64500412C1C /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
+		2D1BD6A11CC8D64500412C1C /* GWLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLAlertView.h; sourceTree = "<group>"; };
+		2D1BD6A21CC8D64500412C1C /* GWLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLAlertView.m; sourceTree = "<group>"; };
 		2D1BD6A41CC8DC5600412C1C /* pet_cancle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pet_cancle@2x.png"; sourceTree = "<group>"; };
 		2D1BD6A51CC8DC5600412C1C /* pet_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pet_ok@2x.png"; sourceTree = "<group>"; };
 		2D1BD6AB1CC9017000412C1C /* radio_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_unselect@2x.png"; sourceTree = "<group>"; };
@@ -97,12 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				2D839F5D1CCDF2CB00478D85 /* CoreText */,
-				2D1BD6AB1CC9017000412C1C /* radio_unselect@2x.png */,
-				2D1CBF001CCA19BF0093029E /* radio_select@2x.png */,
-				2D1BD6A41CC8DC5600412C1C /* pet_cancle@2x.png */,
-				2D1BD6A51CC8DC5600412C1C /* pet_ok@2x.png */,
-				2D1BD6A11CC8D64500412C1C /* TTAlertView.h */,
-				2D1BD6A21CC8D64500412C1C /* TTAlertView.m */,
+				2D1BD6A11CC8D64500412C1C /* GWLAlertView.h */,
+				2D1BD6A21CC8D64500412C1C /* GWLAlertView.m */,
 				2D1BD68D1CC8D62100412C1C /* AppDelegate.h */,
 				2D1BD68E1CC8D62100412C1C /* AppDelegate.m */,
 				2D1BD6901CC8D62100412C1C /* ViewController.h */,
@@ -119,6 +115,10 @@
 		2D1BD68A1CC8D62100412C1C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D1BD6AB1CC9017000412C1C /* radio_unselect@2x.png */,
+				2D1CBF001CCA19BF0093029E /* radio_select@2x.png */,
+				2D1BD6A41CC8DC5600412C1C /* pet_cancle@2x.png */,
+				2D1BD6A51CC8DC5600412C1C /* pet_ok@2x.png */,
 				2D1BD68B1CC8D62100412C1C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -233,7 +233,7 @@
 				2D839F761CCDF2CB00478D85 /* TLAttributedLabelUtils.m in Sources */,
 				2D839F771CCDF2CB00478D85 /* TLAttributedLink.m in Sources */,
 				2D1BD68C1CC8D62100412C1C /* main.m in Sources */,
-				2D1BD6A31CC8D64500412C1C /* TTAlertView.m in Sources */,
+				2D1BD6A31CC8D64500412C1C /* GWLAlertView.m in Sources */,
 				2D839F751CCDF2CB00478D85 /* TLAttributedLabel.m in Sources */,
 				2D839F731CCDF2CB00478D85 /* NSMutableAttributedString+Picture.m in Sources */,
 				2D839F781CCDF2CB00478D85 /* UIImageView+GIF.m in Sources */,
