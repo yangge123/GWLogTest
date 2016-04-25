@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TTAlertView.h"
+#import "GWLAlertView.h"
 
 @interface ViewController ()
 
@@ -35,8 +35,11 @@
 
 - (void)btn2Action {
     
-    TTAlertView *alert = [[TTAlertView alloc] initWithTitle:@"余额不足" contentText:@"请确保机器人有40%以上的电量，点击 “[/pet_ok]” 确认机器人升级开始。"];
+    GWLAlertView *alert = [[GWLAlertView alloc] initWithTitle:@"余额不足" contentText:@"请确保机器人有40%以上的电量，点击 “[/pet_ok]” 确认机器人升级开始。"];
+    
     alert.contentFont = [UIFont systemFontOfSize:16.0];
+    
+    
     [alert show];
     
     alert.contentTextrightBlock = ^{
@@ -45,7 +48,7 @@
 }
 
 - (void)btnAction {
-    TTAlertView *alertView = [[TTAlertView alloc] initWithTitle:@"请输入您要提交的对象" contentArr:@[@"公子小白语言老师",@"程序员",@"硬件工程师",@"产品汪",@"狗尾草草园长"]];
+    GWLAlertView *alertView = [[GWLAlertView alloc] initWithTitle:@"请输入您要提交的对象" contentArr:@[@"公子小白语言老师",@"程序员",@"硬件工程师",@"产品汪",@"狗尾草草园长"]];
     
     [alertView show];
     

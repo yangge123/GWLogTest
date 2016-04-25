@@ -9,7 +9,7 @@
 
 typedef void(^RightBlock) (NSArray *selectedArrIndex);
 
-@interface TTAlertView : UIView
+@interface GWLAlertView : UIView
 
 - (instancetype)initWithTitle:(NSString *)title
         contentText:(NSString *)content;
