@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    //button
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(60, 100, 80, 40)];
     button.backgroundColor = [UIColor redColor];
     [self.view addSubview:button];
