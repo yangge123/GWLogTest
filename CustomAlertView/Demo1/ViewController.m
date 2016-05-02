@@ -33,6 +33,7 @@
     [self.view addSubview:button2];
     
     [button2 addTarget:self action:@selector(btn2Action) forControlEvents:UIControlEventTouchUpInside];
+    //hgah
 }
 
 - (void)btn2Action {
