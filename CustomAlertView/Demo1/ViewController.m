@@ -34,7 +34,7 @@
     
     [button2 addTarget:self action:@selector(btn2Action) forControlEvents:UIControlEventTouchUpInside];
     //hgah
-    
+    //git ignore fast commit
     //dev ceshi
 }
 
