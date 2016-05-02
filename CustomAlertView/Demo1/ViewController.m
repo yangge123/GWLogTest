@@ -34,6 +34,8 @@
     
     [button2 addTarget:self action:@selector(btn2Action) forControlEvents:UIControlEventTouchUpInside];
     //hgah
+    
+    //dev ceshi
 }
 
 - (void)btn2Action {
