@@ -33,6 +33,8 @@
     [self.view addSubview:button2];
     
     [button2 addTarget:self action:@selector(btn2Action) forControlEvents:UIControlEventTouchUpInside];
+    
+    //dev ceshi
 }
 
 - (void)btn2Action {
