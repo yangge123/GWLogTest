@@ -40,6 +40,31 @@ typedef NS_ENUM(NSInteger, DemoType) {
     [self messageForwarding];
     
     self.datas = @[@"关联对象", @"方法交换", @"归档", @"字典转模型"];
+    
+    Class newClass =
+    objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
+    class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
+    objc_registerClassPair(newClass);
+    
+    id instanceOfNewClass =
+    [[newClass alloc] initWithDomain:@"someDomain" code:0 userInfo:nil];
+    [instanceOfNewClass performSelector:@selector(report)];
+}
+
+void ReportFunction(id self, SEL _cmd)
+{
+    NSLog(@"This object is %p.", self);
+    NSLog(@"Class is %@, and super is %@.", [self class], [self superclass]);
+    
+    Class currentClass = [self class];
+    for (int i = 1; i < 5; i++)
+    {
+        NSLog(@"Following the isa pointer %d times gives %p", i, currentClass);
+        currentClass = object_getClass(currentClass);
+    }
+    
+    NSLog(@"NSObject's class is %p", [NSObject class]);
+    NSLog(@"NSObject's meta class is %p", object_getClass([NSObject class]));
 }
 
 #pragma mark - 动态的创建一个类

@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D02F32E1DC7450E00F5688D /* GWLogListTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02F3241DC7450E00F5688D /* GWLogListTest.framework */; };
+		2D02F3331DC7450E00F5688D /* GWLogListTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3321DC7450E00F5688D /* GWLogListTestTests.m */; };
+		2D02F3351DC7450E00F5688D /* GWLogListTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3271DC7450E00F5688D /* GWLogListTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D02F34C1DC7451B00F5688D /* GWLogCacheTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */; };
+		2D02F34D1DC7451B00F5688D /* GWLogCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */; };
+		2D02F34E1DC7451B00F5688D /* GWLogFatalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */; };
+		2D02F34F1DC7451B00F5688D /* GWLogListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3411DC7451B00F5688D /* GWLogListCell.h */; };
+		2D02F3501DC7451B00F5688D /* GWLogListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3421DC7451B00F5688D /* GWLogListCell.m */; };
+		2D02F3511DC7451B00F5688D /* GWLogListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3431DC7451B00F5688D /* GWLogListManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D02F3521DC7451B00F5688D /* GWLogListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3441DC7451B00F5688D /* GWLogListManager.m */; };
+		2D02F3531DC7451B00F5688D /* GWLogListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3451DC7451B00F5688D /* GWLogListViewController.h */; };
+		2D02F3541DC7451B00F5688D /* GWLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3461DC7451B00F5688D /* GWLogListViewController.m */; };
+		2D02F3551DC7451B00F5688D /* GWLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3471DC7451B00F5688D /* GWLogModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D02F3561DC7451B00F5688D /* GWLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3481DC7451B00F5688D /* GWLogModel.m */; };
+		2D02F3571DC7451B00F5688D /* GWQueryLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */; };
+		2D02F3581DC7451B00F5688D /* GWQueryLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */; };
+		2D02F3591DC7451B00F5688D /* WSLogFatalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */; };
+		2D02F3661DC745C200F5688D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F35B1DC745C200F5688D /* FMDatabase.h */; };
+		2D02F3671DC745C200F5688D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F35C1DC745C200F5688D /* FMDatabase.m */; };
+		2D02F3681DC745C200F5688D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F35D1DC745C200F5688D /* FMDatabaseAdditions.h */; };
+		2D02F3691DC745C200F5688D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F35E1DC745C200F5688D /* FMDatabaseAdditions.m */; };
+		2D02F36A1DC745C200F5688D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F35F1DC745C200F5688D /* FMDatabasePool.h */; };
+		2D02F36B1DC745C200F5688D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3601DC745C200F5688D /* FMDatabasePool.m */; };
+		2D02F36C1DC745C200F5688D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3611DC745C200F5688D /* FMDatabaseQueue.h */; };
+		2D02F36D1DC745C200F5688D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3621DC745C200F5688D /* FMDatabaseQueue.m */; };
+		2D02F36E1DC745C200F5688D /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3631DC745C200F5688D /* FMDB.h */; };
+		2D02F36F1DC745C200F5688D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3641DC745C200F5688D /* FMResultSet.h */; };
+		2D02F3701DC745C200F5688D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3651DC745C200F5688D /* FMResultSet.m */; };
+		2D02F3731DC7461100F5688D /* GWCommonTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3711DC7461100F5688D /* GWCommonTool.h */; };
+		2D02F3741DC7461100F5688D /* GWCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3721DC7461100F5688D /* GWCommonTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D02F32F1DC7450E00F5688D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D02F31B1DC7450E00F5688D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02F3231DC7450E00F5688D;
+			remoteInfo = GWLogListTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D02F3241DC7450E00F5688D /* GWLogListTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GWLogListTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02F3271DC7450E00F5688D /* GWLogListTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWLogListTest.h; sourceTree = "<group>"; };
+		2D02F3281DC7450E00F5688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D02F32D1DC7450E00F5688D /* GWLogListTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWLogListTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02F3321DC7450E00F5688D /* GWLogListTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWLogListTestTests.m; sourceTree = "<group>"; };
+		2D02F3341DC7450E00F5688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogCacheTool.h; sourceTree = "<group>"; };
+		2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogCacheTool.m; sourceTree = "<group>"; };
+		2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogFatalHandler.h; sourceTree = "<group>"; };
+		2D02F3411DC7451B00F5688D /* GWLogListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListCell.h; sourceTree = "<group>"; };
+		2D02F3421DC7451B00F5688D /* GWLogListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListCell.m; sourceTree = "<group>"; };
+		2D02F3431DC7451B00F5688D /* GWLogListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListManager.h; sourceTree = "<group>"; };
+		2D02F3441DC7451B00F5688D /* GWLogListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListManager.m; sourceTree = "<group>"; };
+		2D02F3451DC7451B00F5688D /* GWLogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListViewController.h; sourceTree = "<group>"; };
+		2D02F3461DC7451B00F5688D /* GWLogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListViewController.m; sourceTree = "<group>"; };
+		2D02F3471DC7451B00F5688D /* GWLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogModel.h; sourceTree = "<group>"; };
+		2D02F3481DC7451B00F5688D /* GWLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogModel.m; sourceTree = "<group>"; };
+		2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWQueryLogModel.h; sourceTree = "<group>"; };
+		2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWQueryLogModel.m; sourceTree = "<group>"; };
+		2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLogFatalHandler.m; sourceTree = "<group>"; };
+		2D02F35B1DC745C200F5688D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		2D02F35C1DC745C200F5688D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		2D02F35D1DC745C200F5688D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		2D02F35E1DC745C200F5688D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		2D02F35F1DC745C200F5688D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		2D02F3601DC745C200F5688D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		2D02F3611DC745C200F5688D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2D02F3621DC745C200F5688D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2D02F3631DC745C200F5688D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		2D02F3641DC745C200F5688D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		2D02F3651DC745C200F5688D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		2D02F3711DC7461100F5688D /* GWCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCommonTool.h; sourceTree = "<group>"; };
+		2D02F3721DC7461100F5688D /* GWCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCommonTool.m; sourceTree = "<group>"; };
+		2D02F3761DC746BF00F5688D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2D02F3821DC7499600F5688D /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D02F3201DC7450E00F5688D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02F32A1DC7450E00F5688D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02F32E1DC7450E00F5688D /* GWLogListTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D02F31A1DC7450E00F5688D = {
+			isa = PBXGroup;
+			children = (
+				2D02F3261DC7450E00F5688D /* GWLogListTest */,
+				2D02F3311DC7450E00F5688D /* GWLogListTestTests */,
+				2D02F3251DC7450E00F5688D /* Products */,
+				2D02F3751DC746BF00F5688D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D02F3251DC7450E00F5688D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D02F3241DC7450E00F5688D /* GWLogListTest.framework */,
+				2D02F32D1DC7450E00F5688D /* GWLogListTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D02F3261DC7450E00F5688D /* GWLogListTest */ = {
+			isa = PBXGroup;
+			children = (
+				2D02F35A1DC745C200F5688D /* fmdb */,
+				2D02F3271DC7450E00F5688D /* GWLogListTest.h */,
+				2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */,
+				2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */,
+				2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */,
+				2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */,
+				2D02F3411DC7451B00F5688D /* GWLogListCell.h */,
+				2D02F3421DC7451B00F5688D /* GWLogListCell.m */,
+				2D02F3431DC7451B00F5688D /* GWLogListManager.h */,
+				2D02F3441DC7451B00F5688D /* GWLogListManager.m */,
+				2D02F3451DC7451B00F5688D /* GWLogListViewController.h */,
+				2D02F3461DC7451B00F5688D /* GWLogListViewController.m */,
+				2D02F3471DC7451B00F5688D /* GWLogModel.h */,
+				2D02F3481DC7451B00F5688D /* GWLogModel.m */,
+				2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */,
+				2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */,
+				2D02F3711DC7461100F5688D /* GWCommonTool.h */,
+				2D02F3721DC7461100F5688D /* GWCommonTool.m */,
+				2D02F3281DC7450E00F5688D /* Info.plist */,
+				2D02F3821DC7499600F5688D /* Script.sh */,
+			);
+			path = GWLogListTest;
+			sourceTree = "<group>";
+		};
+		2D02F3311DC7450E00F5688D /* GWLogListTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D02F3321DC7450E00F5688D /* GWLogListTestTests.m */,
+				2D02F3341DC7450E00F5688D /* Info.plist */,
+			);
+			path = GWLogListTestTests;
+			sourceTree = "<group>";
+		};
+		2D02F35A1DC745C200F5688D /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				2D02F35B1DC745C200F5688D /* FMDatabase.h */,
+				2D02F35C1DC745C200F5688D /* FMDatabase.m */,
+				2D02F35D1DC745C200F5688D /* FMDatabaseAdditions.h */,
+				2D02F35E1DC745C200F5688D /* FMDatabaseAdditions.m */,
+				2D02F35F1DC745C200F5688D /* FMDatabasePool.h */,
+				2D02F3601DC745C200F5688D /* FMDatabasePool.m */,
+				2D02F3611DC745C200F5688D /* FMDatabaseQueue.h */,
+				2D02F3621DC745C200F5688D /* FMDatabaseQueue.m */,
+				2D02F3631DC745C200F5688D /* FMDB.h */,
+				2D02F3641DC745C200F5688D /* FMResultSet.h */,
+				2D02F3651DC745C200F5688D /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		2D02F3751DC746BF00F5688D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D02F3761DC746BF00F5688D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D02F3211DC7450E00F5688D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02F3351DC7450E00F5688D /* GWLogListTest.h in Headers */,
+				2D02F3731DC7461100F5688D /* GWCommonTool.h in Headers */,
+				2D02F36E1DC745C200F5688D /* FMDB.h in Headers */,
+				2D02F3551DC7451B00F5688D /* GWLogModel.h in Headers */,
+				2D02F3531DC7451B00F5688D /* GWLogListViewController.h in Headers */,
+				2D02F3571DC7451B00F5688D /* GWQueryLogModel.h in Headers */,
+				2D02F36F1DC745C200F5688D /* FMResultSet.h in Headers */,
+				2D02F3511DC7451B00F5688D /* GWLogListManager.h in Headers */,
+				2D02F3661DC745C200F5688D /* FMDatabase.h in Headers */,
+				2D02F34C1DC7451B00F5688D /* GWLogCacheTool.h in Headers */,
+				2D02F3681DC745C200F5688D /* FMDatabaseAdditions.h in Headers */,
+				2D02F34F1DC7451B00F5688D /* GWLogListCell.h in Headers */,
+				2D02F36C1DC745C200F5688D /* FMDatabaseQueue.h in Headers */,
+				2D02F34E1DC7451B00F5688D /* GWLogFatalHandler.h in Headers */,
+				2D02F36A1DC745C200F5688D /* FMDatabasePool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D02F3231DC7450E00F5688D /* GWLogListTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02F3381DC7450E00F5688D /* Build configuration list for PBXNativeTarget "GWLogListTest" */;
+			buildPhases = (
+				2D02F31F1DC7450E00F5688D /* Sources */,
+				2D02F3201DC7450E00F5688D /* Frameworks */,
+				2D02F3211DC7450E00F5688D /* Headers */,
+				2D02F3221DC7450E00F5688D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GWLogListTest;
+			productName = GWLogListTest;
+			productReference = 2D02F3241DC7450E00F5688D /* GWLogListTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D02F32C1DC7450E00F5688D /* GWLogListTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02F33B1DC7450E00F5688D /* Build configuration list for PBXNativeTarget "GWLogListTestTests" */;
+			buildPhases = (
+				2D02F3291DC7450E00F5688D /* Sources */,
+				2D02F32A1DC7450E00F5688D /* Frameworks */,
+				2D02F32B1DC7450E00F5688D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02F3301DC7450E00F5688D /* PBXTargetDependency */,
+			);
+			name = GWLogListTestTests;
+			productName = GWLogListTestTests;
+			productReference = 2D02F32D1DC7450E00F5688D /* GWLogListTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D02F31B1DC7450E00F5688D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = gowild;
+				TargetAttributes = {
+					2D02F3231DC7450E00F5688D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K3H4C8BRL;
+						ProvisioningStyle = Automatic;
+					};
+					2D02F32C1DC7450E00F5688D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K3H4C8BRL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D02F31E1DC7450E00F5688D /* Build configuration list for PBXProject "GWLogListTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D02F31A1DC7450E00F5688D;
+			productRefGroup = 2D02F3251DC7450E00F5688D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D02F3231DC7450E00F5688D /* GWLogListTest */,
+				2D02F32C1DC7450E00F5688D /* GWLogListTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D02F3221DC7450E00F5688D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02F32B1DC7450E00F5688D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D02F31F1DC7450E00F5688D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02F3521DC7451B00F5688D /* GWLogListManager.m in Sources */,
+				2D02F3581DC7451B00F5688D /* GWQueryLogModel.m in Sources */,
+				2D02F3561DC7451B00F5688D /* GWLogModel.m in Sources */,
+				2D02F3591DC7451B00F5688D /* WSLogFatalHandler.m in Sources */,
+				2D02F3741DC7461100F5688D /* GWCommonTool.m in Sources */,
+				2D02F3501DC7451B00F5688D /* GWLogListCell.m in Sources */,
+				2D02F3691DC745C200F5688D /* FMDatabaseAdditions.m in Sources */,
+				2D02F3701DC745C200F5688D /* FMResultSet.m in Sources */,
+				2D02F34D1DC7451B00F5688D /* GWLogCacheTool.m in Sources */,
+				2D02F36B1DC745C200F5688D /* FMDatabasePool.m in Sources */,
+				2D02F36D1DC745C200F5688D /* FMDatabaseQueue.m in Sources */,
+				2D02F3541DC7451B00F5688D /* GWLogListViewController.m in Sources */,
+				2D02F3671DC745C200F5688D /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02F3291DC7450E00F5688D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02F3331DC7450E00F5688D /* GWLogListTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D02F3301DC7450E00F5688D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02F3231DC7450E00F5688D /* GWLogListTest */;
+			targetProxy = 2D02F32F1DC7450E00F5688D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D02F3361DC7450E00F5688D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D02F3371DC7450E00F5688D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D02F3391DC7450E00F5688D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2K3H4C8BRL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GWLogListTest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.gowild.GWLogListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2D02F33A1DC7450E00F5688D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2K3H4C8BRL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GWLogListTest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.gowild.GWLogListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2D02F33C1DC7450E00F5688D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2K3H4C8BRL;
+				INFOPLIST_FILE = GWLogListTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.gowild.GWLogListTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D02F33D1DC7450E00F5688D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2K3H4C8BRL;
+				INFOPLIST_FILE = GWLogListTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.gowild.GWLogListTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D02F31E1DC7450E00F5688D /* Build configuration list for PBXProject "GWLogListTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02F3361DC7450E00F5688D /* Debug */,
+				2D02F3371DC7450E00F5688D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02F3381DC7450E00F5688D /* Build configuration list for PBXNativeTarget "GWLogListTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02F3391DC7450E00F5688D /* Debug */,
+				2D02F33A1DC7450E00F5688D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02F33B1DC7450E00F5688D /* Build configuration list for PBXNativeTarget "GWLogListTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02F33C1DC7450E00F5688D /* Debug */,
+				2D02F33D1DC7450E00F5688D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D02F31B1DC7450E00F5688D /* Project object */;
+}
