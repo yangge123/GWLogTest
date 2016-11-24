@@ -12,6 +12,9 @@
 #import "GWLogListViewController.h"
 
 @interface GWLogListManager()
+{
+    dispatch_queue_t _isolationQueue;
+}
 
 @property(nonatomic,copy) NSString* logPath;
 
@@ -19,9 +22,19 @@
 
 @property (nonatomic,strong)GWLogListViewController *logListVc;
 
+@property (nonatomic,strong)NSMutableArray<GWLogModel *> *logBufferArrM;////缓存80条log数据
+
 @end
 
 @implementation GWLogListManager
+
+- (NSMutableArray<GWLogModel *> *)logBufferArrM
+{
+    if (!_logBufferArrM) {
+        _logBufferArrM = [NSMutableArray<GWLogModel *> array];
+    }
+    return _logBufferArrM;
+}
 
 - (GWLogListViewController *)logListVc
 {
@@ -49,17 +62,25 @@
     if (self) {
         
         InstallUncaughtExceptionHandler(); // 开启异常监控
+        
+        //创建一个读写队列
+        _isolationQueue = dispatch_queue_create("com.gowild.logIO", DISPATCH_QUEUE_CONCURRENT);
     }
     
     return self;
 }
 
-- (void)getCurrentLog
+- (void)updateLogList
 {
-    [self.logListVc getLogMessage];
+    if (_isShow)
+    {
+        dispatch_sync(_isolationQueue, ^{
+            [self.logListVc getLogMessage];
+        });
+    }
 }
 
-- (void)cacheLog:(NSString *)msg fileMsg:(NSString *)fileMsg logType:(int)logType // logType 0 表示异常
+- (void)cacheLog:(NSString *)msg fileMsg:(NSString *)fileMsg logType:(int)logType complementBlock:(void (^)(void))complementBlock// logType 0 表示异常
 {
     GWLogModel *logModel = [[GWLogModel alloc] init];
     
@@ -73,12 +94,39 @@
         logModel.fileMsg = fileMsg;
     }
     
-    [GWLogCacheTool addLogMsg:logModel];
+    dispatch_barrier_async(_isolationQueue, ^{
+        
+        //数据库同步操作
+        [GWLogCacheTool addLogMsg:logModel];
+        
+        if (self.logBufferArrM.count >= 60)//缓存60条log数据
+        {
+            [self.logBufferArrM removeLastObject];
+        }
+        
+        [self.logBufferArrM insertObject:logModel atIndex:0];
+        
+        if (complementBlock) {
+            complementBlock(); //完成之后通知
+        }
+    });
 }
 
-- (void)cacheLog:(NSString *)msg logType:(int)logType // logType 0 表示异常
+- (void)cacheLog:(NSString *)msg logType:(int)logType complementBlock:(void (^)(void))complementBlock // logType 0 表示异常
 {
-    [self cacheLog:msg fileMsg:nil logType:logType];
+    [self cacheLog:msg fileMsg:nil logType:logType complementBlock:complementBlock];
+}
+
+- (NSArray<GWLogModel *> *)syncQueryLogs
+{
+    if (self.logBufferArrM.count >= 60)
+    {
+        return [self.logBufferArrM copy];
+    }
+    else
+    {
+        return [self queryLogs];
+    }
 }
 
 - (NSArray<GWLogModel *> *)queryLogs
@@ -87,7 +135,7 @@
     
     NSInteger currentTime = [[NSDate date] timeIntervalSince1970];
     
-    req.start_time = currentTime - 1 * 60 * 60; //从当前时间1小时前开始查找日志
+    req.start_time = currentTime - 20 * 60; //从20分钟前开始查找日志
     
     NSArray<GWLogModel *> *logArr = [GWLogCacheTool queryLogsWithParam:req];
     
@@ -96,14 +144,34 @@
 
 - (void)popOrDismissConfigWithViewController:(UIViewController *)vc
 {
-    if (!_isShow) {
-        //
-        [vc presentViewController:self.logListVc animated:YES completion:NULL];
-    }else{
-        [self.logListVc dismissViewControllerAnimated:YES completion:NULL];
-    }
-    
     _isShow = !_isShow;
+    
+    if (_isShow)
+    {
+        [self.logListVc getLogMessage];
+        
+        if (vc.navigationController)
+        {
+            [vc.navigationController pushViewController:self.logListVc
+                                               animated:YES];
+        }
+        else
+        {
+            [vc presentViewController:self.logListVc animated:YES completion:NULL];
+
+        }
+    }
+    else
+    {
+        if (vc.navigationController)
+        {
+            [vc.navigationController popViewControllerAnimated:YES];
+        }
+        else
+        {
+            [self.logListVc dismissViewControllerAnimated:YES completion:NULL];
+        }
+    }
 }
 
 @end

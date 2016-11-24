@@ -8,13 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, LogType) {
+    LogType_ExceptionLog = 0,//异常
+    LogType_NetWorkLog = 1,   //网络数据
+    LogType_ErrorLog = 2,
+};
+
 @interface GWLogModel : NSObject
 
 @property (nonatomic,copy)NSString *softVersion;
 
 @property (nonatomic,assign) NSInteger logCreatTime;
 
-@property (nonatomic,assign)int logType; // 0 异常 1 普通打印  2 网络数据打印
+@property (nonatomic,assign)LogType logType; // 0 异常  1 网络数据打印
 
 @property (nonatomic,copy) NSString *logMsg;
 

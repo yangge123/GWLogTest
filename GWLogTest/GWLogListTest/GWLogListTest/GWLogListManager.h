@@ -10,17 +10,20 @@
 #import <UIKit/UIKit.h>
 #import "GWLogModel.h"
 
+
 @interface GWLogListManager : NSObject
 
 + (instancetype)shareInstance;
 
-- (void)getCurrentLog;
+- (void)updateLogList;
 
-- (void)cacheLog:(NSString *)msg logType:(int)logType; // 0 代表异常 1 2 之后实现
+//缓存log数据
+- (void)cacheLog:(NSString *)msg logType:(int)logType complementBlock:(void (^)(void))complementBlock; // 0 代表异常 1 2 之后实现
 
-- (void)cacheLog:(NSString *)msg fileMsg:(NSString *)fileMsg logType:(int)logType;
+- (void)cacheLog:(NSString *)msg fileMsg:(NSString *)fileMsg logType:(int)logType complementBlock:(void (^)(void))complementBlock;
 
-- (NSArray<GWLogModel *> *)queryLogs;
+//同步查找
+- (NSArray<GWLogModel *> *)syncQueryLogs;
 
 - (void)popOrDismissConfigWithViewController:(UIViewController *)vc;
 

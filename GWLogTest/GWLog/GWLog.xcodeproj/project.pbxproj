@@ -16,8 +16,8 @@
 		2D0CA1EF1DC826F200280815 /* GWLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CA1EE1DC826F200280815 /* GWLogTests.m */; };
 		2D0CA1FA1DC826F200280815 /* GWLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CA1F91DC826F200280815 /* GWLogUITests.m */; };
 		2D0CA2091DC827A200280815 /* GWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CA2081DC827A200280815 /* GWCommon.m */; };
-		2D0CA20C1DC8285E00280815 /* GWLogListTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0CA20B1DC8285E00280815 /* GWLogListTest.framework */; };
 		2D0CA20E1DC8286F00280815 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0CA20D1DC8286F00280815 /* libsqlite3.tbd */; };
+		2D156B8B1DE6E90700B50815 /* GWLogListTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D156B8A1DE6E90700B50815 /* GWLogListTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		2D0CA1FB1DC826F200280815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0CA2071DC827A200280815 /* GWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCommon.h; sourceTree = "<group>"; };
 		2D0CA2081DC827A200280815 /* GWCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCommon.m; sourceTree = "<group>"; };
-		2D0CA20B1DC8285E00280815 /* GWLogListTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GWLogListTest.framework; path = "../../Library/Developer/Xcode/DerivedData/GWLogTest-asobjzalxbygaocprgfmxmywfvlu/Build/Products/Debug-iphoneos/GWLogListTest.framework"; sourceTree = "<group>"; };
 		2D0CA20D1DC8286F00280815 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2D156B8A1DE6E90700B50815 /* GWLogListTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GWLogListTest.framework; path = "../../../Library/Developer/Xcode/DerivedData/GWLogTest-eaedeibgdymphmewlpnevbtojbyk/Build/Products/Debug-iphonesimulator/GWLogListTest.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D156B8B1DE6E90700B50815 /* GWLogListTest.framework in Frameworks */,
 				2D0CA20E1DC8286F00280815 /* libsqlite3.tbd in Frameworks */,
-				2D0CA20C1DC8285E00280815 /* GWLogListTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +155,8 @@
 		2D0CA20A1DC8285D00280815 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D156B8A1DE6E90700B50815 /* GWLogListTest.framework */,
 				2D0CA20D1DC8286F00280815 /* libsqlite3.tbd */,
-				2D0CA20B1DC8285E00280815 /* GWLogListTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

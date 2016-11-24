@@ -23,6 +23,8 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 
 @interface GWLogFatalHandler ()
 
+@property (nonatomic,assign)BOOL dismissed;
+
 @end
 
 @implementation GWLogFatalHandler
@@ -51,7 +53,11 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 {
     NSString *exceptionStr = [NSString stringWithFormat:@"异常名%@ 异常产生的原因:%@",exception.name,exception.reason];
     
-    [[GWLogListManager shareInstance] cacheLog:exceptionStr logType:0];
+    __weak typeof(self) weakSelf = self;
+    
+    [[GWLogListManager shareInstance] cacheLog:exceptionStr logType:LogType_ExceptionLog complementBlock:^{
+        weakSelf.dismissed = YES;
+    }];
 }
 
 - (void)handleException:(NSException *)exception
@@ -61,7 +67,7 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     CFRunLoopRef runLoop = CFRunLoopGetCurrent();
     CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
     
-    while (!dismissed)
+    while (!self.dismissed)
     {
         for (NSString *mode in (__bridge NSArray *)allModes)
         {

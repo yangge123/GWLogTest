@@ -32,8 +32,6 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStyleGrouped];
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
-        [_tableView addGestureRecognizer:tap];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
@@ -46,10 +44,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tableView];
-}
-
-- (void)tapAction:(UITapGestureRecognizer *)tap {
-    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
@@ -75,16 +69,15 @@
 
 - (void)getLogMessage
 {
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        // 处理耗时操作的代码块...
-        NSArray<GWLogModel *> * logsArr = [[GWLogListManager shareInstance] queryLogs];
-        //通知主线程刷新
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //回调或者说是通知主线程刷新，
-            [self.dataArrM removeAllObjects];
-            [self.dataArrM addObjectsFromArray:logsArr];
-            [self.tableView reloadData];
-        });
+    [self.dataArrM removeAllObjects];
+    
+    NSArray *arr = [[GWLogListManager shareInstance] syncQueryLogs];
+    
+    [self.dataArrM addObjectsFromArray:arr];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self.tableView reloadData]; //在主线程刷新UI
     });
 }
 

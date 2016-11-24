@@ -15,13 +15,16 @@ static FMDatabaseQueue *_queue;
 
 + (void)setup
 {
-    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"log.sqlite"];
-    
-    _queue = [FMDatabaseQueue databaseQueueWithPath:path];
-    
-    [_queue inDatabase:^(FMDatabase *db) {
-        [db executeUpdate:@"create table if not exists t_log (id integer primary key autoincrement, logCreatTime integer, softVersion text, logType integer, logMsg text, fileMsg text);"];
-    }];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"log.sqlite"];
+        
+        _queue = [FMDatabaseQueue databaseQueueWithPath:path];
+        
+        [_queue inDatabase:^(FMDatabase *db) {
+            [db executeUpdate:@"create table if not exists t_log (id integer primary key autoincrement, logCreatTime integer, softVersion text, logType integer, logMsg text, fileMsg text);"];
+        }];
+    });
 }
 
 + (void)addLogMsg:(GWLogModel *)logModel

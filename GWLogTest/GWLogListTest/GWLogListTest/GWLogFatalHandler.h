@@ -10,9 +10,6 @@
 #
 
 @interface GWLogFatalHandler : NSObject
-{
-    BOOL dismissed;
-}
 
 @end
 

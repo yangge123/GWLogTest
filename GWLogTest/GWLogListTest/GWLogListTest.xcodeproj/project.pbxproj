@@ -9,21 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D02F32E1DC7450E00F5688D /* GWLogListTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02F3241DC7450E00F5688D /* GWLogListTest.framework */; };
 		2D02F3331DC7450E00F5688D /* GWLogListTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3321DC7450E00F5688D /* GWLogListTestTests.m */; };
-		2D02F3351DC7450E00F5688D /* GWLogListTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3271DC7450E00F5688D /* GWLogListTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D02F34C1DC7451B00F5688D /* GWLogCacheTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */; };
-		2D02F34D1DC7451B00F5688D /* GWLogCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */; };
-		2D02F34E1DC7451B00F5688D /* GWLogFatalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */; };
-		2D02F34F1DC7451B00F5688D /* GWLogListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3411DC7451B00F5688D /* GWLogListCell.h */; };
-		2D02F3501DC7451B00F5688D /* GWLogListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3421DC7451B00F5688D /* GWLogListCell.m */; };
-		2D02F3511DC7451B00F5688D /* GWLogListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3431DC7451B00F5688D /* GWLogListManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D02F3521DC7451B00F5688D /* GWLogListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3441DC7451B00F5688D /* GWLogListManager.m */; };
-		2D02F3531DC7451B00F5688D /* GWLogListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3451DC7451B00F5688D /* GWLogListViewController.h */; };
-		2D02F3541DC7451B00F5688D /* GWLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3461DC7451B00F5688D /* GWLogListViewController.m */; };
-		2D02F3551DC7451B00F5688D /* GWLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3471DC7451B00F5688D /* GWLogModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D02F3561DC7451B00F5688D /* GWLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3481DC7451B00F5688D /* GWLogModel.m */; };
-		2D02F3571DC7451B00F5688D /* GWQueryLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */; };
-		2D02F3581DC7451B00F5688D /* GWQueryLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */; };
-		2D02F3591DC7451B00F5688D /* WSLogFatalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */; };
 		2D02F3661DC745C200F5688D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F35B1DC745C200F5688D /* FMDatabase.h */; };
 		2D02F3671DC745C200F5688D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F35C1DC745C200F5688D /* FMDatabase.m */; };
 		2D02F3681DC745C200F5688D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F35D1DC745C200F5688D /* FMDatabaseAdditions.h */; };
@@ -35,8 +20,23 @@
 		2D02F36E1DC745C200F5688D /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3631DC745C200F5688D /* FMDB.h */; };
 		2D02F36F1DC745C200F5688D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3641DC745C200F5688D /* FMResultSet.h */; };
 		2D02F3701DC745C200F5688D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3651DC745C200F5688D /* FMResultSet.m */; };
-		2D02F3731DC7461100F5688D /* GWCommonTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02F3711DC7461100F5688D /* GWCommonTool.h */; };
-		2D02F3741DC7461100F5688D /* GWCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02F3721DC7461100F5688D /* GWCommonTool.m */; };
+		2D156B7A1DE6E7F400B50815 /* GWCommonTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B6A1DE6E7F400B50815 /* GWCommonTool.h */; };
+		2D156B7B1DE6E7F400B50815 /* GWCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B6B1DE6E7F400B50815 /* GWCommonTool.m */; };
+		2D156B7C1DE6E7F400B50815 /* GWLogCacheTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B6C1DE6E7F400B50815 /* GWLogCacheTool.h */; };
+		2D156B7D1DE6E7F400B50815 /* GWLogCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B6D1DE6E7F400B50815 /* GWLogCacheTool.m */; };
+		2D156B7E1DE6E7F400B50815 /* GWLogFatalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B6E1DE6E7F400B50815 /* GWLogFatalHandler.h */; };
+		2D156B7F1DE6E7F400B50815 /* GWLogListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B6F1DE6E7F400B50815 /* GWLogListCell.h */; };
+		2D156B801DE6E7F400B50815 /* GWLogListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B701DE6E7F400B50815 /* GWLogListCell.m */; };
+		2D156B811DE6E7F400B50815 /* GWLogListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B711DE6E7F400B50815 /* GWLogListManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D156B821DE6E7F400B50815 /* GWLogListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B721DE6E7F400B50815 /* GWLogListManager.m */; };
+		2D156B831DE6E7F400B50815 /* GWLogListTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B731DE6E7F400B50815 /* GWLogListTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D156B841DE6E7F400B50815 /* GWLogListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B741DE6E7F400B50815 /* GWLogListViewController.h */; };
+		2D156B851DE6E7F400B50815 /* GWLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B751DE6E7F400B50815 /* GWLogListViewController.m */; };
+		2D156B861DE6E7F400B50815 /* GWLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B761DE6E7F400B50815 /* GWLogModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D156B871DE6E7F400B50815 /* GWLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B771DE6E7F400B50815 /* GWLogModel.m */; };
+		2D156B881DE6E7F400B50815 /* GWQueryLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D156B781DE6E7F400B50815 /* GWQueryLogModel.h */; };
+		2D156B891DE6E7F400B50815 /* GWQueryLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B791DE6E7F400B50815 /* GWQueryLogModel.m */; };
+		2D156B8D1DE6EA4600B50815 /* WSLogFatalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D156B8C1DE6EA4600B50815 /* WSLogFatalHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,25 +51,10 @@
 
 /* Begin PBXFileReference section */
 		2D02F3241DC7450E00F5688D /* GWLogListTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GWLogListTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02F3271DC7450E00F5688D /* GWLogListTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWLogListTest.h; sourceTree = "<group>"; };
 		2D02F3281DC7450E00F5688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D02F32D1DC7450E00F5688D /* GWLogListTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWLogListTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02F3321DC7450E00F5688D /* GWLogListTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWLogListTestTests.m; sourceTree = "<group>"; };
 		2D02F3341DC7450E00F5688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogCacheTool.h; sourceTree = "<group>"; };
-		2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogCacheTool.m; sourceTree = "<group>"; };
-		2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogFatalHandler.h; sourceTree = "<group>"; };
-		2D02F3411DC7451B00F5688D /* GWLogListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListCell.h; sourceTree = "<group>"; };
-		2D02F3421DC7451B00F5688D /* GWLogListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListCell.m; sourceTree = "<group>"; };
-		2D02F3431DC7451B00F5688D /* GWLogListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListManager.h; sourceTree = "<group>"; };
-		2D02F3441DC7451B00F5688D /* GWLogListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListManager.m; sourceTree = "<group>"; };
-		2D02F3451DC7451B00F5688D /* GWLogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListViewController.h; sourceTree = "<group>"; };
-		2D02F3461DC7451B00F5688D /* GWLogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListViewController.m; sourceTree = "<group>"; };
-		2D02F3471DC7451B00F5688D /* GWLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogModel.h; sourceTree = "<group>"; };
-		2D02F3481DC7451B00F5688D /* GWLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogModel.m; sourceTree = "<group>"; };
-		2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWQueryLogModel.h; sourceTree = "<group>"; };
-		2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWQueryLogModel.m; sourceTree = "<group>"; };
-		2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLogFatalHandler.m; sourceTree = "<group>"; };
 		2D02F35B1DC745C200F5688D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		2D02F35C1DC745C200F5688D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		2D02F35D1DC745C200F5688D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -81,10 +66,25 @@
 		2D02F3631DC745C200F5688D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		2D02F3641DC745C200F5688D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		2D02F3651DC745C200F5688D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		2D02F3711DC7461100F5688D /* GWCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCommonTool.h; sourceTree = "<group>"; };
-		2D02F3721DC7461100F5688D /* GWCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCommonTool.m; sourceTree = "<group>"; };
 		2D02F3761DC746BF00F5688D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2D02F3821DC7499600F5688D /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
+		2D156B6A1DE6E7F400B50815 /* GWCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCommonTool.h; sourceTree = "<group>"; };
+		2D156B6B1DE6E7F400B50815 /* GWCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCommonTool.m; sourceTree = "<group>"; };
+		2D156B6C1DE6E7F400B50815 /* GWLogCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogCacheTool.h; sourceTree = "<group>"; };
+		2D156B6D1DE6E7F400B50815 /* GWLogCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogCacheTool.m; sourceTree = "<group>"; };
+		2D156B6E1DE6E7F400B50815 /* GWLogFatalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogFatalHandler.h; sourceTree = "<group>"; };
+		2D156B6F1DE6E7F400B50815 /* GWLogListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListCell.h; sourceTree = "<group>"; };
+		2D156B701DE6E7F400B50815 /* GWLogListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListCell.m; sourceTree = "<group>"; };
+		2D156B711DE6E7F400B50815 /* GWLogListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListManager.h; sourceTree = "<group>"; };
+		2D156B721DE6E7F400B50815 /* GWLogListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListManager.m; sourceTree = "<group>"; };
+		2D156B731DE6E7F400B50815 /* GWLogListTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListTest.h; sourceTree = "<group>"; };
+		2D156B741DE6E7F400B50815 /* GWLogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogListViewController.h; sourceTree = "<group>"; };
+		2D156B751DE6E7F400B50815 /* GWLogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogListViewController.m; sourceTree = "<group>"; };
+		2D156B761DE6E7F400B50815 /* GWLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLogModel.h; sourceTree = "<group>"; };
+		2D156B771DE6E7F400B50815 /* GWLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLogModel.m; sourceTree = "<group>"; };
+		2D156B781DE6E7F400B50815 /* GWQueryLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWQueryLogModel.h; sourceTree = "<group>"; };
+		2D156B791DE6E7F400B50815 /* GWQueryLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWQueryLogModel.m; sourceTree = "<group>"; };
+		2D156B8C1DE6EA4600B50815 /* WSLogFatalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLogFatalHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,24 +128,24 @@
 		2D02F3261DC7450E00F5688D /* GWLogListTest */ = {
 			isa = PBXGroup;
 			children = (
+				2D156B6A1DE6E7F400B50815 /* GWCommonTool.h */,
+				2D156B6B1DE6E7F400B50815 /* GWCommonTool.m */,
+				2D156B6C1DE6E7F400B50815 /* GWLogCacheTool.h */,
+				2D156B6D1DE6E7F400B50815 /* GWLogCacheTool.m */,
+				2D156B6E1DE6E7F400B50815 /* GWLogFatalHandler.h */,
+				2D156B8C1DE6EA4600B50815 /* WSLogFatalHandler.m */,
+				2D156B6F1DE6E7F400B50815 /* GWLogListCell.h */,
+				2D156B701DE6E7F400B50815 /* GWLogListCell.m */,
+				2D156B711DE6E7F400B50815 /* GWLogListManager.h */,
+				2D156B721DE6E7F400B50815 /* GWLogListManager.m */,
+				2D156B731DE6E7F400B50815 /* GWLogListTest.h */,
+				2D156B741DE6E7F400B50815 /* GWLogListViewController.h */,
+				2D156B751DE6E7F400B50815 /* GWLogListViewController.m */,
+				2D156B761DE6E7F400B50815 /* GWLogModel.h */,
+				2D156B771DE6E7F400B50815 /* GWLogModel.m */,
+				2D156B781DE6E7F400B50815 /* GWQueryLogModel.h */,
+				2D156B791DE6E7F400B50815 /* GWQueryLogModel.m */,
 				2D02F35A1DC745C200F5688D /* fmdb */,
-				2D02F3271DC7450E00F5688D /* GWLogListTest.h */,
-				2D02F33E1DC7451B00F5688D /* GWLogCacheTool.h */,
-				2D02F33F1DC7451B00F5688D /* GWLogCacheTool.m */,
-				2D02F3401DC7451B00F5688D /* GWLogFatalHandler.h */,
-				2D02F34B1DC7451B00F5688D /* WSLogFatalHandler.m */,
-				2D02F3411DC7451B00F5688D /* GWLogListCell.h */,
-				2D02F3421DC7451B00F5688D /* GWLogListCell.m */,
-				2D02F3431DC7451B00F5688D /* GWLogListManager.h */,
-				2D02F3441DC7451B00F5688D /* GWLogListManager.m */,
-				2D02F3451DC7451B00F5688D /* GWLogListViewController.h */,
-				2D02F3461DC7451B00F5688D /* GWLogListViewController.m */,
-				2D02F3471DC7451B00F5688D /* GWLogModel.h */,
-				2D02F3481DC7451B00F5688D /* GWLogModel.m */,
-				2D02F3491DC7451B00F5688D /* GWQueryLogModel.h */,
-				2D02F34A1DC7451B00F5688D /* GWQueryLogModel.m */,
-				2D02F3711DC7461100F5688D /* GWCommonTool.h */,
-				2D02F3721DC7461100F5688D /* GWCommonTool.m */,
 				2D02F3281DC7450E00F5688D /* Info.plist */,
 				2D02F3821DC7499600F5688D /* Script.sh */,
 			);
@@ -194,20 +194,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02F3351DC7450E00F5688D /* GWLogListTest.h in Headers */,
-				2D02F3731DC7461100F5688D /* GWCommonTool.h in Headers */,
+				2D156B831DE6E7F400B50815 /* GWLogListTest.h in Headers */,
+				2D156B861DE6E7F400B50815 /* GWLogModel.h in Headers */,
+				2D156B811DE6E7F400B50815 /* GWLogListManager.h in Headers */,
+				2D156B7C1DE6E7F400B50815 /* GWLogCacheTool.h in Headers */,
+				2D156B881DE6E7F400B50815 /* GWQueryLogModel.h in Headers */,
 				2D02F36E1DC745C200F5688D /* FMDB.h in Headers */,
-				2D02F3551DC7451B00F5688D /* GWLogModel.h in Headers */,
-				2D02F3531DC7451B00F5688D /* GWLogListViewController.h in Headers */,
-				2D02F3571DC7451B00F5688D /* GWQueryLogModel.h in Headers */,
+				2D156B841DE6E7F400B50815 /* GWLogListViewController.h in Headers */,
+				2D156B7E1DE6E7F400B50815 /* GWLogFatalHandler.h in Headers */,
 				2D02F36F1DC745C200F5688D /* FMResultSet.h in Headers */,
-				2D02F3511DC7451B00F5688D /* GWLogListManager.h in Headers */,
 				2D02F3661DC745C200F5688D /* FMDatabase.h in Headers */,
-				2D02F34C1DC7451B00F5688D /* GWLogCacheTool.h in Headers */,
+				2D156B7F1DE6E7F400B50815 /* GWLogListCell.h in Headers */,
 				2D02F3681DC745C200F5688D /* FMDatabaseAdditions.h in Headers */,
-				2D02F34F1DC7451B00F5688D /* GWLogListCell.h in Headers */,
 				2D02F36C1DC745C200F5688D /* FMDatabaseQueue.h in Headers */,
-				2D02F34E1DC7451B00F5688D /* GWLogFatalHandler.h in Headers */,
+				2D156B7A1DE6E7F400B50815 /* GWCommonTool.h in Headers */,
 				2D02F36A1DC745C200F5688D /* FMDatabasePool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,19 +312,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02F3521DC7451B00F5688D /* GWLogListManager.m in Sources */,
-				2D02F3581DC7451B00F5688D /* GWQueryLogModel.m in Sources */,
-				2D02F3561DC7451B00F5688D /* GWLogModel.m in Sources */,
-				2D02F3591DC7451B00F5688D /* WSLogFatalHandler.m in Sources */,
-				2D02F3741DC7461100F5688D /* GWCommonTool.m in Sources */,
-				2D02F3501DC7451B00F5688D /* GWLogListCell.m in Sources */,
 				2D02F3691DC745C200F5688D /* FMDatabaseAdditions.m in Sources */,
 				2D02F3701DC745C200F5688D /* FMResultSet.m in Sources */,
-				2D02F34D1DC7451B00F5688D /* GWLogCacheTool.m in Sources */,
+				2D156B8D1DE6EA4600B50815 /* WSLogFatalHandler.m in Sources */,
 				2D02F36B1DC745C200F5688D /* FMDatabasePool.m in Sources */,
+				2D156B821DE6E7F400B50815 /* GWLogListManager.m in Sources */,
 				2D02F36D1DC745C200F5688D /* FMDatabaseQueue.m in Sources */,
-				2D02F3541DC7451B00F5688D /* GWLogListViewController.m in Sources */,
+				2D156B851DE6E7F400B50815 /* GWLogListViewController.m in Sources */,
+				2D156B7B1DE6E7F400B50815 /* GWCommonTool.m in Sources */,
+				2D156B891DE6E7F400B50815 /* GWQueryLogModel.m in Sources */,
+				2D156B7D1DE6E7F400B50815 /* GWLogCacheTool.m in Sources */,
+				2D156B801DE6E7F400B50815 /* GWLogListCell.m in Sources */,
 				2D02F3671DC745C200F5688D /* FMDatabase.m in Sources */,
+				2D156B871DE6E7F400B50815 /* GWLogModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
