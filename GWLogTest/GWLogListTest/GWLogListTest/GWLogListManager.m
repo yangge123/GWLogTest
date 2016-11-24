@@ -22,7 +22,7 @@
 
 @property (nonatomic,strong)GWLogListViewController *logListVc;
 
-@property (nonatomic,strong)NSMutableArray<GWLogModel *> *logBufferArrM;////缓存80条log数据
+@property (nonatomic,strong)NSMutableArray<GWLogModel *> *logBufferArrM;////缓存60条log数据
 
 @end
 
